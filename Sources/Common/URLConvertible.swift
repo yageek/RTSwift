@@ -14,4 +14,3 @@ protocol URLConvertible {
     var path: String { get }
     var components: [String: String?] { get }
 }
-

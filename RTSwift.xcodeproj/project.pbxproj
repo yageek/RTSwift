@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3394F720518D1200BF0992 /* KeychainWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3394F620518D1200BF0992 /* KeychainWrapperTests.swift */; };
+		0B3394F820518D1400BF0992 /* KeychainWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3394F620518D1200BF0992 /* KeychainWrapperTests.swift */; };
 		0B536383204EEA4D00E45BBD /* RTSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B53637A204EEA4C00E45BBD /* RTSwift.framework */; };
 		0B536392204EEA9F00E45BBD /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BCB93204ECBEB008823A3 /* URLConvertible.swift */; };
 		0B536393204EEA9F00E45BBD /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BCB96204ECE4B008823A3 /* OAuth.swift */; };
@@ -53,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B3394F620518D1200BF0992 /* KeychainWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapperTests.swift; sourceTree = "<group>"; };
 		0B53637A204EEA4C00E45BBD /* RTSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RTSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B536382204EEA4D00E45BBD /* RTSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B536396204EF4FF00E45BBD /* CwlMutex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CwlMutex.swift; sourceTree = "<group>"; };
@@ -156,6 +159,7 @@
 			children = (
 				0B566547204EC51A001D0922 /* RTSwiftTests.swift */,
 				0B566548204EC51A001D0922 /* Info.plist */,
+				0B3394F620518D1200BF0992 /* KeychainWrapperTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -392,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B536394204EEAA200E45BBD /* RTSwiftTests.swift in Sources */,
+				0B3394F820518D1400BF0992 /* KeychainWrapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B566549204EC51A001D0922 /* RTSwiftTests.swift in Sources */,
+				0B3394F720518D1200BF0992 /* KeychainWrapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

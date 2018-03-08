@@ -60,9 +60,11 @@ enum APIError: Error, LocalizedError {
 final class APIGetTokenOperation: RTSOperation, OAuthClientDelegate {
 
     let client: OAuthClient
+    let keychainWrapper: KeychainWrapper
 
-    init(client: OAuthClient) {
+    init(client: OAuthClient, keychainWrapper: KeychainWrapper) {
         self.client = client
+        self.keychainWrapper = keychainWrapper
         super.init()
         name = "net.yageek.APIGetTokenOperation"
     }
@@ -75,12 +77,31 @@ final class APIGetTokenOperation: RTSOperation, OAuthClientDelegate {
             return
         }
 
-        // First check if if we have the token already
+        // First check if if we have the token already in the cache
         if let token = client.token, !token.hasExpired {
             self.finish()
             return
         }
 
+        // if not, try to load from the keychain
+        do {
+            let token = try keychainWrapper.getToken()
+
+            if token.hasExpired {
+                getTokenFromAPI()
+            } else {
+                // Update the token
+                client.token = token
+                self.finish()
+            }
+            
+        } catch let error {
+            print("Can not get the token from the keychain: \(error)")
+            getTokenFromAPI()
+        }
+    }
+
+    private func getTokenFromAPI() {
         client.delegate = self
         client.retrieveToken()
     }
@@ -91,6 +112,16 @@ final class APIGetTokenOperation: RTSOperation, OAuthClientDelegate {
 
     // MARK: OAuthClientDelegate
     func oauthClient(client: OAuthClient, didRetrievedToken token: AccessToken) {
+
+        // Update the cache
+        client.token = token
+
+        // Update keychain attempt
+        do {
+            try keychainWrapper.saveToken(token: token)
+        } catch let error {
+            print("Impossible to save the token inside the keychain: \(error)")
+        }
         self.finish()
     }
 
@@ -224,6 +255,7 @@ final class APIRequestOperation<Response: Decodable>: RTSOperation {
 class APIClient {
 
     let oauth: OAuthClient
+    let keychainWrapper: KeychainWrapper
 
     let requestQueue: OperationQueue = {
         let queue = OperationQueue()
@@ -235,10 +267,11 @@ class APIClient {
     init(key: String, secret: String, completionQueue: DispatchQueue? = nil) {
         self.oauth = OAuthClient(key: key, secret: secret)
         self.completionQueue = completionQueue ?? DispatchQueue.main
+        self.keychainWrapper = KeychainWrapper()
     }
 
     func performRequest<Response: Decodable>(request: URLConvertible, success: @escaping(Response) -> Void, error: @escaping(Error) -> Void) {
-        let getToken = APIGetTokenOperation(client: oauth)
+        let getToken = APIGetTokenOperation(client: oauth, keychainWrapper: keychainWrapper)
         let request = APIRequestOperation<Response>(request: request, success: success, error: error)
 
         let inject = BlockOperation { [unowned getToken, unowned request] in

@@ -186,12 +186,16 @@ final class OAuthRequestTokenOperation: RTSOperation {
 
 
 // MARK: - Client
-struct AccessToken {
+struct AccessToken: Codable, Equatable {
     let token: String
     let expires: Date
 
     var hasExpired: Bool {
         return Date().compare(expires) == .orderedAscending
+    }
+    
+    static func ==(lhs: AccessToken, rhs: AccessToken) -> Bool {
+        return lhs.token == rhs.token && lhs.expires == rhs.expires
     }
 }
 
