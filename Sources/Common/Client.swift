@@ -83,14 +83,21 @@ final class APIGetTokenOperation: RTSOperation, OAuthClientDelegate {
             return
         }
 
+        #if DEBUG
+            print("Cache has expired. Reading keychain...")
+        #endif
+        
         // if not, try to load from the keychain
         do {
             let token = try keychainWrapper.getToken()
-
             if token.hasExpired {
+                #if DEBUG
+                    print("Token has expired. Getting a new one..")
+                #endif
                 getTokenFromAPI()
             } else {
                 // Update the token
+                print("Setting token into cache..")
                 client.token = token
                 self.finish()
             }
@@ -102,6 +109,14 @@ final class APIGetTokenOperation: RTSOperation, OAuthClientDelegate {
     }
 
     private func getTokenFromAPI() {
+
+
+        do {
+            try keychainWrapper.deleteToken()
+        } catch let error {
+            print("Impossible to delete the token: \(error)")
+        }
+
         client.delegate = self
         client.retrieveToken()
     }

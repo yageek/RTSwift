@@ -84,28 +84,28 @@ extension SRGSSRVideo {
     public typealias VideoShowsList = APIResultList<VideoShowsListTrait>
 
     public struct VideoShow: Decodable {
-        let id: String
-        let mediaType: String
-        let vendor: String
-        let urn: String
-        let title: String
+        public let id: String
+        public let mediaType: String
+        public let vendor: String
+        public let urn: String
+        public let title: String
 
-        let description: String
-        let imageUrl: URL
-        let type: String
-        let date: Date
-        let duration: Int
-        let validTo: Date
-        let playableAbroad: Bool
-        let show: TVShow
-        let episode: Episode
+        public let description: String?
+        public let imageUrl: URL
+        public let type: String
+        public let date: String
+        public let duration: Int
+        public let validFrom: String
+        public let playableAbroad: Bool
+        public let show: TVShow
+        public let episode: Episode
     }
 
     public struct Episode: Decodable {
-        let id: String
-        let title: String
-        let description: String
-        let publishedDate: Date
-        let imageUrl: URL
+        public let id: String
+        public let title: String
+        public let description: String?
+        public let publishedDate: String?
+        public let imageUrl: URL
     }
 }

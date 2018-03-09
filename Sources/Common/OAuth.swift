@@ -191,7 +191,7 @@ struct AccessToken: Codable, Equatable {
     let expires: Date
 
     var hasExpired: Bool {
-        return Date().compare(expires) == .orderedAscending
+        return Date().compare(expires) == .orderedDescending
     }
     
     static func ==(lhs: AccessToken, rhs: AccessToken) -> Bool {

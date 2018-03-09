@@ -49,7 +49,6 @@ public class RTSClient {
         client.performRequest(request: SRGSSRVideo.videoShows.trending(bu: bu, onlyEpisodes: onlyEpisodes, maxCountEditorPicks: maxCountEditorPicks, pageSize: pageSize, next: next), success: success, error: error)
     }
 
-
     public func searchVideosShows(bu: BusinessUnit, query: String, pageSize: Int? = nil, next: String? = nil, success: @escaping (SRGSSRVideo.VideoShowsList) -> Void, error: @escaping (Error) -> Void) {
         client.performRequest(request: SRGSSRVideo.videoShows.searchVideoList(bu: bu, query: query, pageSize: nil, next: nil), success: success, error: error)
     }

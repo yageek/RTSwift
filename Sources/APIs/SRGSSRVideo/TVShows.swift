@@ -49,19 +49,19 @@ extension SRGSSRVideo {
 extension SRGSSRVideo {
 
     public struct TVShow: Decodable {
-        let id: String
-        let vendor: String
-        let transmission: String
-        let urn: String
-        let title: String
-        let imageUrl: URL
+        public let id: String
+        public let vendor: String
+        public let transmission: String
+        public let urn: String
+        public let title: String
+        public let imageUrl: URL
 
-        let url: URL?
-        let description: String?
-        let imageTitle: String?
-        let bannerImageUrl: URL?
-        let primaryChannelId: String?
-        let numberOfEpisodes: Int?
+        public let url: URL?
+        public let description: String?
+        public let imageTitle: String?
+        public let bannerImageUrl: URL?
+        public let primaryChannelId: String?
+        public let numberOfEpisodes: Int?
     }
 
     public struct TVShowsAlphabeticalResultTrait: APIListResultTrait {

@@ -16,8 +16,8 @@ public protocol APIListResultTrait {
 
 public class APIResultList<Result: APIListResultTrait>: Decodable {
 
-    let next: URL?
-    let list: [Result.ResponseObject]
+    public let next: URL?
+    public let list: [Result.ResponseObject]
 
     public struct CodingKeys: CodingKey {
         public var intValue: Int?
