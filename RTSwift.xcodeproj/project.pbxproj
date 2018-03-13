@@ -36,6 +36,9 @@
 		0B8BCB8C204EC607008823A3 /* RTSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B8BCB8A204EC607008823A3 /* RTSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B8BCB94204ECBEB008823A3 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BCB93204ECBEB008823A3 /* URLConvertible.swift */; };
 		0B8BCB97204ECE4B008823A3 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BCB96204ECE4B008823A3 /* OAuth.swift */; };
+		0B99C00020582F160088A4D8 /* URN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99BFFF20582F160088A4D8 /* URN.swift */; };
+		0B99C00120582FAF0088A4D8 /* URN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99BFFF20582F160088A4D8 /* URN.swift */; };
+		0B99C0032058327E0088A4D8 /* URNGetStreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99C0022058327E0088A4D8 /* URNGetStreamOperation.swift */; };
 		0BDAEA4B205019C0000545BE /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDAEA4A205019C0000545BE /* Client.swift */; };
 		0BDAEA4C205019C0000545BE /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDAEA4A205019C0000545BE /* Client.swift */; };
 		0BDAEA5220504043000545BE /* RTSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDAEA5120504043000545BE /* RTSClient.swift */; };
@@ -48,6 +51,11 @@
 		0BDAEA5D20504BF1000545BE /* VideoShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDAEA5B20504BF1000545BE /* VideoShows.swift */; };
 		0BDAEA5F20505077000545BE /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDAEA5E20505077000545BE /* Keychain.swift */; };
 		0BDAEA6020505077000545BE /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDAEA5E20505077000545BE /* Keychain.swift */; };
+		0BE6BE8920586A6A0026AC90 /* URNResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6BE8820586A6A0026AC90 /* URNResponse.swift */; };
+		0BE6BE8A2058793B0026AC90 /* URNGetStreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99C0022058327E0088A4D8 /* URNGetStreamOperation.swift */; };
+		0BE6BE8B2058796A0026AC90 /* URN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99BFFF20582F160088A4D8 /* URN.swift */; };
+		0BE6BE8D2058796F0026AC90 /* URNResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6BE8820586A6A0026AC90 /* URNResponse.swift */; };
+		0BE6BE8E205879700026AC90 /* URNResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6BE8820586A6A0026AC90 /* URNResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +100,8 @@
 		0B8BCB8B204EC607008823A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B8BCB93204ECBEB008823A3 /* URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConvertible.swift; sourceTree = "<group>"; };
 		0B8BCB96204ECE4B008823A3 /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		0B99BFFF20582F160088A4D8 /* URN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URN.swift; sourceTree = "<group>"; };
+		0B99C0022058327E0088A4D8 /* URNGetStreamOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URNGetStreamOperation.swift; sourceTree = "<group>"; };
 		0BB54AA12052BF3600238CC8 /* NonPublic.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NonPublic.md; sourceTree = "<group>"; };
 		0BDAEA4920501863000545BE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0BDAEA4A205019C0000545BE /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
@@ -101,6 +111,7 @@
 		0BDAEA5B20504BF1000545BE /* VideoShows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoShows.swift; sourceTree = "<group>"; };
 		0BDAEA5E20505077000545BE /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		0BDAEA612050525A000545BE /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		0BE6BE8820586A6A0026AC90 /* URNResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URNResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +233,9 @@
 		0BB54A9F2052BE0000238CC8 /* URN */ = {
 			isa = PBXGroup;
 			children = (
+				0BE6BE8820586A6A0026AC90 /* URNResponse.swift */,
+				0B99BFFF20582F160088A4D8 /* URN.swift */,
+				0B99C0022058327E0088A4D8 /* URNGetStreamOperation.swift */,
 			);
 			path = URN;
 			sourceTree = "<group>";
@@ -502,16 +516,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE6BE8A2058793B0026AC90 /* URNGetStreamOperation.swift in Sources */,
 				0B0316DD2051A81900632A4C /* URLConvertible.swift in Sources */,
 				0B0316DF2051A81900632A4C /* Concurrency.swift in Sources */,
 				0B0316E62051A82400632A4C /* RTSClient.swift in Sources */,
 				0B0316E02051A81900632A4C /* Client.swift in Sources */,
+				0BE6BE8E205879700026AC90 /* URNResponse.swift in Sources */,
 				0B0316DE2051A81900632A4C /* OAuth.swift in Sources */,
 				0B0316E22051A81E00632A4C /* TVShows.swift in Sources */,
 				0B0316E12051A81900632A4C /* Keychain.swift in Sources */,
 				0B0316E42051A81E00632A4C /* VideoShows.swift in Sources */,
 				0B0316E52051A82200632A4C /* CwlMutex.swift in Sources */,
 				0B0316E32051A81E00632A4C /* Common.swift in Sources */,
+				0B99C00120582FAF0088A4D8 /* URN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,12 +549,14 @@
 				0BDAEA4C205019C0000545BE /* Client.swift in Sources */,
 				0BDAEA5320504043000545BE /* RTSClient.swift in Sources */,
 				0BDAEA5A20504B0E000545BE /* Common.swift in Sources */,
+				0BE6BE8D2058796F0026AC90 /* URNResponse.swift in Sources */,
 				0B53639B204EFDCA00E45BBD /* Concurrency.swift in Sources */,
 				0BDAEA5D20504BF1000545BE /* VideoShows.swift in Sources */,
 				0B536398204EF4FF00E45BBD /* CwlMutex.swift in Sources */,
 				0BDAEA5720504AF8000545BE /* TVShows.swift in Sources */,
 				0B536392204EEA9F00E45BBD /* URLConvertible.swift in Sources */,
 				0BDAEA6020505077000545BE /* Keychain.swift in Sources */,
+				0BE6BE8B2058796A0026AC90 /* URN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,16 +573,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B99C0032058327E0088A4D8 /* URNGetStreamOperation.swift in Sources */,
 				0B8BCB94204ECBEB008823A3 /* URLConvertible.swift in Sources */,
 				0BDAEA4B205019C0000545BE /* Client.swift in Sources */,
 				0BDAEA5220504043000545BE /* RTSClient.swift in Sources */,
 				0BDAEA5920504B0E000545BE /* Common.swift in Sources */,
+				0BE6BE8920586A6A0026AC90 /* URNResponse.swift in Sources */,
 				0B53639A204EFDCA00E45BBD /* Concurrency.swift in Sources */,
 				0BDAEA5C20504BF1000545BE /* VideoShows.swift in Sources */,
 				0B536397204EF4FF00E45BBD /* CwlMutex.swift in Sources */,
 				0BDAEA5620504AF8000545BE /* TVShows.swift in Sources */,
 				0B8BCB97204ECE4B008823A3 /* OAuth.swift in Sources */,
 				0BDAEA5F20505077000545BE /* Keychain.swift in Sources */,
+				0B99C00020582F160088A4D8 /* URN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

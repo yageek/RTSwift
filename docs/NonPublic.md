@@ -4,7 +4,7 @@ The public API does not seems to provide access to the HLS stream of elements
 
 Analyzing the behaviour of the HTML player let seems to have a scheme to get the URL of the HLS:
 
-From the URN of the player, call this url: http://il.srgssr.ch/integrationlayer/2.0/mediaComposition/byUrn/{{URN}}.json?onlyChapters=true&vector=portalplay
+From the URN of the player, call this url: `http://il.srgssr.ch/integrationlayer/2.0/mediaComposition/byUrn/{{URN}}.json?onlyChapters=true&vector=portalplay`
 
 Inside the returned payload, you may retrieve an url to an MP4 on the keypath on `show.podcastSubscriptionUrl`.
 

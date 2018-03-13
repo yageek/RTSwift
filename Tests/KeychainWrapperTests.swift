@@ -14,7 +14,7 @@ class KeychainWrapperTests: XCTestCase {
     let wrapper = KeychainWrapper()
     override func setUp() {
         super.setUp()
-        try! wrapper.deleteToken()
+        try? wrapper.deleteToken()
     }
     
     func testSaveGet() {

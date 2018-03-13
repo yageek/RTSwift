@@ -53,4 +53,8 @@ public class RTSClient {
         client.performRequest(request: SRGSSRVideo.videoShows.searchVideoList(bu: bu, query: query, pageSize: nil, next: nil), success: success, error: error)
     }
 
+    public func getURN(URN urn: String, success: @escaping (URL) -> Void, error: @escaping (Error) -> Void) {
+        let op = URNGetStreamOperation(URN: urn, queue: client.requestQueue, success: success, error: error)
+        client.performOperation(op: op)
+    }
 }

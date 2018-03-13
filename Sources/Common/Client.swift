@@ -22,6 +22,7 @@ enum APIError: Error, LocalizedError {
     case urlSerializationError(String)
     case apiResponseError(HTTPURLResponse, Data?)
     case decodingError(Error)
+    case unknownError
 
     var errorDescription: String? {
         switch self {
@@ -53,6 +54,8 @@ enum APIError: Error, LocalizedError {
 
 
         case .decodingError(let error): return NSLocalizedString("Error during JSON decoding: \(error)", comment: "Error for the developer.")
+        case .unknownError:
+            return "Unknown Error"
         }
     }
 }
@@ -180,7 +183,7 @@ final class APIRequestOperation<Response: Decodable>: RTSOperation {
             return
         }
 
-        guard let token = token else {
+        if token == nil && request.securityEnabled {
             print("No token has been provided :( Can not go on")
             self.finish()
             return
@@ -211,7 +214,7 @@ final class APIRequestOperation<Response: Decodable>: RTSOperation {
 
         urlRequest.setValue(userAgent, forHTTPHeaderField: "UserAgent")
         if request.securityEnabled {
-            urlRequest.setValue("Bearer \(token.token)", forHTTPHeaderField: "Authorization")
+            urlRequest.setValue("Bearer \(token!.token)", forHTTPHeaderField: "Authorization")
         }
 
         let task = session.dataTask(with: urlRequest) { [unowned self] (data, response, error) in
@@ -269,6 +272,12 @@ final class APIRequestOperation<Response: Decodable>: RTSOperation {
 // MARK: APIClient
 class APIClient {
 
+    let session: URLSession = {
+        var config = URLSessionConfiguration.default
+        config.httpCookieAcceptPolicy = .always
+        return URLSession(configuration: config)
+    }()
+
     let oauth: OAuthClient
     let keychainWrapper: KeychainWrapper
 
@@ -285,9 +294,13 @@ class APIClient {
         self.keychainWrapper = KeychainWrapper()
     }
 
+    func performOperation(op: Operation) {
+        requestQueue.addOperation(op)
+    }
+    
     func performRequest<Response: Decodable>(request: URLConvertible, success: @escaping(Response) -> Void, error: @escaping(Error) -> Void) {
         let getToken = APIGetTokenOperation(client: oauth, keychainWrapper: keychainWrapper)
-        let request = APIRequestOperation<Response>(request: request, success: success, error: error)
+        let request = APIRequestOperation<Response>(session: session, request: request, success: success, error: error)
 
         let inject = BlockOperation { [unowned getToken, unowned request] in
             request.token = getToken.client.token

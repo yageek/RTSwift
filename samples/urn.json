@@ -1,0 +1,215 @@
+{
+   "chapterUrn" : "urn:rts:video:9394670",
+   "episode" : {
+      "id" : "9272656",
+      "title" : "Temps présent",
+      "lead" : "Poutine, le Parrain",
+      "publishedDate" : "2018-03-08T20:11:17+01:00",
+      "imageUrl" : "https://www.rts.ch/2018/02/27/15/56/9369378.image/16x9",
+      "imageTitle" : "Poutine, le Parrain"
+   },
+   "show" : {
+      "id" : "385293",
+      "vendor" : "RTS",
+      "transmission" : "TV",
+      "urn" : "urn:rts:show:tv:385293",
+      "title" : "Temps présent",
+      "lead" : "Depuis avril 1969, Temps Présent est LE magazine d’information de référence de la RTS. Une formule qui a évolué au fil des années, mais dont les fondamentaux sont toujours valables.",
+      "description" : "Expression d’un journalisme critique et indépendant, ce rendez-vous alterne des sujets politiques, sociaux, économiques, historiques et des faits de société puisés dans l’actualité, au sens large, suisse ou internationale.Avec ses enquêtes pointues sur des thèmes marquants, son regard critique sur des sujets parfois dérangeants, Temps Présent s’efforce d’éclairer les crises et les conflits de notre époque et n’hésite pas à ouvrir des dossiers délicats.",
+      "imageUrl" : "https://www.rts.ch/2018/01/11/14/27/9239409.image/16x9",
+      "imageTitle" : "Logo Temps Présent 2018 2600x1463 [RTS]",
+      "bannerImageUrl" : "https://www.rts.ch/2018/01/11/14/27/9239409.image/3x1",
+      "homepageUrl" : "https://www.rts.ch/emissions/temps-present/",
+      "podcastSubscriptionUrl" : "https://www.rts.ch/emissions/temps-present/podcasts/"
+   },
+   "chapterList" : [ {
+      "id" : "9394670",
+      "mediaType" : "VIDEO",
+      "vendor" : "RTS",
+      "urn" : "urn:rts:video:9394670",
+      "title" : "Poutine, le Parrain",
+      "description" : "Le 18 mars prochain, les Russes sont invités aux urnes pour l'élection présidentielle. Un seul favori comme d'habitude depuis l'an 2000 : Vladimir Vladimirovitch Poutine. Depuis des années, il n'est pas seulement le président de la Russie, il en est aussi le Parrain. Il a mis sur pied un système mafieux qui gère et gangrène le pays. Gouvernement, services secrets et crime organisé travaillent main dans la main. Pour ceux qui dénoncent le système, c'est la fuite ou la mort.",
+      "imageUrl" : "https://www.rts.ch/2018/03/13/15/40/9391805.image/16x9",
+      "imageTitle" : "2018. Temps présent: Poutine, le Parrain [RTS/KMProd]",
+      "imageCopyright" : "RTS/KMProd",
+      "type" : "EPISODE",
+      "date" : "2018-03-08T20:11:17+01:00",
+      "duration" : 3279840,
+      "validFrom" : "2018-03-08T21:05:00+01:00",
+      "validTo" : "2018-03-15T22:05:40+01:00",
+      "playableAbroad" : false,
+      "displayable" : true,
+      "position" : 0,
+      "noEmbed" : true,
+      "subtitleList" : [ {
+         "language" : "Français",
+         "locale" : "fr",
+         "url" : "https://www.rts.ch/x/sub/tempr/2018/tempr_20180308_full_555944.webvtt",
+         "format" : "VTT"
+      } ],
+      "analyticsData" : {
+         "ns_st_ep" : "Poutine, le Parrain",
+         "ns_st_ty" : "Video",
+         "ns_st_ci" : "9394670",
+         "ns_st_el" : "3279840",
+         "ns_st_cl" : "3279840",
+         "ns_st_sl" : "3279840",
+         "srg_mgeobl" : "true",
+         "ns_st_tp" : "1",
+         "ns_st_cn" : "1",
+         "ns_st_pn" : "1"
+      },
+      "analyticsMetadata" : {
+         "media_segment" : "Poutine, le Parrain",
+         "media_type" : "Video",
+         "media_segment_id" : "9394670",
+         "media_episode_length" : "3280",
+         "media_segment_length" : "3280",
+         "media_is_geoblocked" : "true",
+         "media_is_web_only" : "false",
+         "media_urn" : "urn:rts:video:9394670"
+      },
+      "eventData" : "$a620ea899facb6d8$d63ff254c52ce4043ddc59e6df3353c9216d3f447605d22f150cfa47a8ab860ac5da6b59a67752eeef02f235361ea37cd1562185a9717140c1e7fd4182c2ae9ed195e68a7ec4db92775631da539a29b8341aee57e1809c649dbf6169322fe84be159e0798d515da28d6c8a333d49a3d412dff8314333b0447c926a75a40065df7df73d4acb4f059f8cae2f4eefd4bf351c56a3d7c3e31648a83707d16fbc621c3bcb091685e857b60e646918cfc82e35a2003f9edf709058e0ee257d7cc8b21fbe5920977de8ad6fc76ecb880f0336587e1ba32508c6ccc5f89dc51d43957581bb70de0ead5861c05ffd5abf4c5723fa0fbd2a3edb16f4e36c02e09fa0429d81",
+      "resourceList" : [ {
+         "url" : "https://rtsvodch-vh.akamaihd.net/i/tempr/2018/tempr_20180308_full_555944-,301k,101k,701k,1201k,2001k,3501k,6001k,.mp4.csmil/master.m3u8",
+         "quality" : "HD",
+         "protocol" : "HLS",
+         "encoding" : "H264",
+         "mimeType" : "application/x-mpegURL",
+         "presentation" : "DEFAULT",
+         "streaming" : "HLS",
+         "dvr" : false,
+         "live" : false,
+         "mediaContainer" : "MP4",
+         "audioCodec" : "MP3",
+         "videoCodec" : "H264",
+         "analyticsData" : {
+            "srg_mqual" : "HD",
+            "srg_mpres" : "DEFAULT"
+         },
+         "analyticsMetadata" : {
+            "media_streaming_quality" : "HD",
+            "media_special_format" : "DEFAULT",
+            "media_url" : "https://rtsvodch-vh.akamaihd.net/i/tempr/2018/tempr_20180308_full_555944-,301k,101k,701k,1201k,2001k,3501k,6001k,.mp4.csmil/master.m3u8"
+         }
+      }, {
+         "url" : "https://rtsvodch-vh.akamaihd.net/i/tempr/2018/tempr_20180308_full_555944-,301k,101k,701k,.mp4.csmil/master.m3u8",
+         "quality" : "SD",
+         "protocol" : "HLS",
+         "encoding" : "H264",
+         "mimeType" : "application/x-mpegURL",
+         "presentation" : "DEFAULT",
+         "streaming" : "HLS",
+         "dvr" : false,
+         "live" : false,
+         "mediaContainer" : "MP4",
+         "audioCodec" : "MP3",
+         "videoCodec" : "H264",
+         "analyticsData" : {
+            "srg_mqual" : "SD",
+            "srg_mpres" : "DEFAULT"
+         },
+         "analyticsMetadata" : {
+            "media_streaming_quality" : "SD",
+            "media_special_format" : "DEFAULT",
+            "media_url" : "https://rtsvodch-vh.akamaihd.net/i/tempr/2018/tempr_20180308_full_555944-,301k,101k,701k,.mp4.csmil/master.m3u8"
+         }
+      }, {
+         "url" : "http://rtsvodch-vh.akamaihd.net/z/tempr/2018/tempr_20180308_full_555944-,301k,101k,701k,1201k,2001k,3501k,6001k,.mp4.csmil/manifest.f4m",
+         "quality" : "HD",
+         "protocol" : "HDS",
+         "encoding" : "H264",
+         "mimeType" : "application/adobe-f4m",
+         "presentation" : "DEFAULT",
+         "streaming" : "HDS",
+         "dvr" : false,
+         "live" : false,
+         "mediaContainer" : "MP4",
+         "audioCodec" : "MP3",
+         "videoCodec" : "H264",
+         "analyticsData" : {
+            "srg_mqual" : "HD",
+            "srg_mpres" : "DEFAULT"
+         },
+         "analyticsMetadata" : {
+            "media_streaming_quality" : "HD",
+            "media_special_format" : "DEFAULT",
+            "media_url" : "http://rtsvodch-vh.akamaihd.net/z/tempr/2018/tempr_20180308_full_555944-,301k,101k,701k,1201k,2001k,3501k,6001k,.mp4.csmil/manifest.f4m"
+         }
+      }, {
+         "url" : "http://rtsvodch-vh.akamaihd.net/z/tempr/2018/tempr_20180308_full_555944-,301k,101k,701k,.mp4.csmil/manifest.f4m",
+         "quality" : "SD",
+         "protocol" : "HDS",
+         "encoding" : "H264",
+         "mimeType" : "application/adobe-f4m",
+         "presentation" : "DEFAULT",
+         "streaming" : "HDS",
+         "dvr" : false,
+         "live" : false,
+         "mediaContainer" : "MP4",
+         "audioCodec" : "MP3",
+         "videoCodec" : "H264",
+         "analyticsData" : {
+            "srg_mqual" : "SD",
+            "srg_mpres" : "DEFAULT"
+         },
+         "analyticsMetadata" : {
+            "media_streaming_quality" : "SD",
+            "media_special_format" : "DEFAULT",
+            "media_url" : "http://rtsvodch-vh.akamaihd.net/z/tempr/2018/tempr_20180308_full_555944-,301k,101k,701k,.mp4.csmil/manifest.f4m"
+         }
+      } ]
+   } ],
+   "topicList" : [ {
+      "id" : "2409",
+      "vendor" : "RTS",
+      "transmission" : "TV",
+      "urn" : "urn:rts:topic:tv:2409",
+      "title" : "Temps Présent"
+   }, {
+      "id" : "2026",
+      "vendor" : "RTS",
+      "transmission" : "TV",
+      "urn" : "urn:rts:topic:tv:2026",
+      "title" : "Émissions"
+   }, {
+      "id" : "622",
+      "vendor" : "RTS",
+      "transmission" : "TV",
+      "urn" : "urn:rts:topic:tv:622",
+      "title" : "rts.ch"
+   } ],
+   "analyticsData" : {
+      "srg_pr_id" : "9272656",
+      "srg_plid" : "385293",
+      "ns_st_pl" : "Temps présent",
+      "ns_st_pr" : "Temps présent du 08.03.2018",
+      "ns_st_dt" : "2018-03-08",
+      "ns_st_li" : "0",
+      "srg_unit" : "RTS",
+      "srg_c1" : "full",
+      "srg_c2" : "video_emissions_temps-present",
+      "srg_c3" : "RTS Un",
+      "srg_tv_id" : "1068716"
+   },
+   "analyticsMetadata" : {
+      "media_episode_id" : "9272656",
+      "media_show_id" : "385293",
+      "media_show" : "Temps présent",
+      "media_episode" : "Temps présent du 08.03.2018",
+      "media_is_livestream" : "false",
+      "media_full_length" : "full",
+      "media_enterprise_units" : "RTS",
+      "media_joker1" : "full",
+      "media_joker2" : "video_emissions_temps-present",
+      "media_joker3" : "RTS Un",
+      "media_tv_id" : "1068716",
+      "media_thumbnail" : "https://www.rts.ch/2018/03/13/15/40/9391805.image/16x9/scale/width/344",
+      "media_publication_date" : "2018-03-08",
+      "media_publication_time" : "20:11:17",
+      "media_publication_datetime" : "2018-03-08T20:11:17+01:00",
+      "media_content_group" : "Temps Présent,Émissions,rts.ch",
+      "media_since_publication_d" : "4",
+      "media_since_publication_h" : "118"
+   }
+}
